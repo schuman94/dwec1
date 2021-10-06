@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
 
-    
+
 
 </head>
 <body>
@@ -16,9 +16,8 @@
     <img src="images/1.png" id="numero" onclick="cambiarImagen()">
     <script>
         function cambiarImagen() {
-            let imagen = document.getElementById("numero");
+            const imagen = document.getElementById("numero");
             if (imagen.src.match("1.png")){
-                console.log(imagen.src);
                 imagen.src="./images/2.png";
             } else if (imagen.src.match("2.png")){
                 imagen.src="./images/3.png";
