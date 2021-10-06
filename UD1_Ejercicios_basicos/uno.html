@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    
+
+</head>
+<body>
+
+
+    <h1>Ejercicio 1</h1>
+    <img src="images/1.png" id="numero" onclick="cambiarImagen()">
+    <script>
+        function cambiarImagen() {
+            let imagen = document.getElementById("numero");
+            if (imagen.src.match("1.png")){
+                console.log(imagen.src);
+                imagen.src="./images/2.png";
+            } else if (imagen.src.match("2.png")){
+                imagen.src="./images/3.png";
+            } else if (imagen.src.match("3.png")){
+                imagen.src="./images/4.png";
+            } else if (imagen.src.match("4.png")){
+                imagen.src="./images/5.png";
+            } else {
+                imagen.src="./images/1.png";
+            }
+        }
+    </script>
+</body>
+</html>
