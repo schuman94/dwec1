@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Ejercicio 3</h1>
+    <p>Saludar en:</p>
+    <button onclick="spanish()">Español</button>
+    <button onclick="english()">Inglés</button>
+    <button onclick="french()">Francés</button>
+    <h2 id="saludo"></h2>
+
+    <script>
+        function spanish() {
+            const saludo = document.getElementById("saludo");
+            saludo.style.color = "green";
+            saludo.innerHTML = "Buenos días";
+
+        }
+
+        function english() {
+            const saludo = document.getElementById("saludo");
+            saludo.style.color = "blue";
+            saludo.innerHTML = "Good morning";
+        }
+
+        function french() {
+            const saludo = document.getElementById("saludo");
+            saludo.style.color = "red";
+            saludo.innerHTML = "Bonjour";
+        }
+    </script>
+</body>
+</html>
