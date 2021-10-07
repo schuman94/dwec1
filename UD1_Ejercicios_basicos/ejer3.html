@@ -9,29 +9,16 @@
 <body>
     <h1>Ejercicio 3</h1>
     <p>Saludar en:</p>
-    <button onclick="spanish()">Español</button>
-    <button onclick="english()">Inglés</button>
-    <button onclick="french()">Francés</button>
-    <h2 id="saludo"></h2>
+    <button onclick="saludar('Buenos dias', 'green')">Español</button>
+    <button onclick="saludar('Good morning', 'blue')">Ingles</button>
+    <button onclick="saludar('Bonjour', 'red')">Frances</button>
+    <h2 id="frase"></h2>
 
     <script>
-        function spanish() {
-            const saludo = document.getElementById("saludo");
-            saludo.style.color = "green";
-            saludo.innerHTML = "Buenos días";
-
-        }
-
-        function english() {
-            const saludo = document.getElementById("saludo");
-            saludo.style.color = "blue";
-            saludo.innerHTML = "Good morning";
-        }
-
-        function french() {
-            const saludo = document.getElementById("saludo");
-            saludo.style.color = "red";
-            saludo.innerHTML = "Bonjour";
+        function saludar(traduccion, color) {
+            const saludo = document.getElementById("frase");
+            saludo.style.color = color;
+            saludo.innerHTML = traduccion;
         }
     </script>
 </body>
